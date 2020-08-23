@@ -1,0 +1,192 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Anantha Sai Satwik}{Vysyaraju}{ %\urlstyle{same}\href{http://debarghyadas.com}{debarghyadas.com}| \href{http://fb.co/dd}{fb.co/dd}\\
+\href{mailto:satwik.vysyaraju@gmail.com}{satwik.vysyaraju@gmail.com} | 7989660169 | \href{mailto:f20191323@hyderabad.bits-pilani.ac.in}{f20191323@hyderabad.bits-pilani.ac.in}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{BITS PILANI HYDERABAD CAMPUS}
+\descript{B.E in Electrical and Electronics Engineering}
+\location{Hyderabad, India}
+\location{ CGPA: 8.68 / 10.0}
+\sectionsep
+
+\subsection{Sri Chaitanya Junior college}
+\location{Intermediate June 2019|  Visakhapatnam, India}
+\location{CGPA: 10.0/10.0}
+\sectionsep
+
+\subsection{De Paul School (ICSE)}
+\location{10th June 2017|  Visakhapatnam, India}
+\location{Percentage: 91.7\%}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/SaiSatwik2226}{\bf SaiSatwik2226} \\
+LinkedIn://  \href{https://www.linkedin.com/in/anantha-sai-satwik-vysyaraju-b766a7194/}{\bf Anantha Sai Satwik Vysyaraju} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Undergraduate}
+Computer Programming (CS F111) \\
+\section{Certifications}
+\subsection{Coursera}
+\href{https://coursera.org/share/6d3557288f40c3aeb3cf7c94c4116a4f}{\bf Python For Everybody} \\
+\href{https://coursera.org/share/bda0d4cd540a01c0d4965a522051c9ba}{\bf Introduction to Git and GitHub} \\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+C \textbullet{} Python  \textbullet{} \\
+HTML\\ 
+\subsection{softwares}
+Adobe Photoshop \textbullet{} Adobe Illustrator \textbullet{} AutoDesk AutoCad \textbullet{} AutoDesk Fusion \\
+\location{Familiar:}
+CSS \textbullet{} Javascript \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Projects}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Created a Basic Voice Recognition code using Python which can open web pages and applications through voice commands.\\
+\item Created a TimeTable generator(Desktop Version) which can generate timetable for our courses. \\
+\item Created lookalike Google search homepage and Google image search homepage.
+\item Made Flappy Bird Game using pyGame from Python.\\
+\item Created a Python code and Mobile App which can simulate the key presses on keyboard from the data sent by mobile application. The data received from accelerometer sensor in the mobile is sent to python code in the form HTTPrequests.\\
+\item Created a Sudoko Game using Processing Lang.\\
+\item Presently working on making a full fledged     Calculator using JavaScript.\\
+\end{tightemize}
+\sectionsep
+
+\section{Interests and Hobbies}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Interested in programming involving automation.\\
+\item Volunteering as a Designer in NSS for past six months.\\
+%\item Learning a new skill.
+\item Involved in college clubs of art and designing.\\
+\item Designing and art.\\
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%\section{Awards} 
+%\begin{tabular}{rll}
+%2014	     & top 52/2500  & KPCB Engineering Fellow\\
+%2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, %Cornell\\
+%2013	     & National  & Jump Trading Challenge Finalist\\
+%2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
+%2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
+%\end{tabular}
+%\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
